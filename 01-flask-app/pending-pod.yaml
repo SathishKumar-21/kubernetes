@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: resource-hog
+spec:
+  containers:
+    - name: flask
+      image: bsathish24/flask-app:v2
+      resources:
+        requests:
+          memory: "100Gi"
+          cpu: "50"
